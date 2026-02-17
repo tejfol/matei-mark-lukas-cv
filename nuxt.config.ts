@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
+  // SSG: static output for Cloudflare Pages (or any static host)
+  nitro: {
+    preset: 'static'
+  },
+
   fonts: {
     families: [
       { name: 'JetBrains Mono', provider: 'google' }
