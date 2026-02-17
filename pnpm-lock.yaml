@@ -51,6 +51,9 @@ importers:
         specifier: ^4.6.4
         version: 4.6.4(vue@3.5.28(typescript@5.9.3))
     devDependencies:
+      '@iconify-json/lucide':
+        specifier: ^1.2.91
+        version: 1.2.91
       daisyui:
         specifier: ^5.5.18
         version: 5.5.18
@@ -648,6 +651,9 @@ packages:
 
   '@i2d/pdf-frame-vue@2.4.0':
     resolution: {integrity: sha512-gsXiqSkLt2jfOIwlfODKUg/2i2lItX8g4xAF9D9KE5Z2QvdcBaqv6LZuX+2CZ3kzH06avaHa2wYze8wvqxCK6g==}
+
+  '@iconify-json/lucide@1.2.91':
+    resolution: {integrity: sha512-8fuRiK+HiNRgCKMspn9UPsDpBw0TqVTIY0LOiDbMnFxOBwAulMXIl+SVOtp4LzxNvCXB5ofYffiiFIFDitqo7w==}
 
   '@iconify/collections@1.0.651':
     resolution: {integrity: sha512-ALGlYxNVOIylxNHjFaylqPTzgNaMHeoFA8ao/piPHjYGD526xEp847F7KePy9jvOLChy2bzQVwAV9Em3HiicjQ==}
@@ -6645,6 +6651,10 @@ snapshots:
       vue: 3.5.28(typescript@5.9.3)
     transitivePeerDependencies:
       - typescript
+
+  '@iconify-json/lucide@1.2.91':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/collections@1.0.651':
     dependencies:

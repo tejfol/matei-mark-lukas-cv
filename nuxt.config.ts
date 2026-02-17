@@ -18,7 +18,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@i2d/nuxt-pdf-frame',
-    '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss'
   ]
 })
