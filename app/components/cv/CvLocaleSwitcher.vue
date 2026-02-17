@@ -12,7 +12,7 @@
       :aria-label="`Switch to ${loc.name}`"
       @click="setLocale(loc.code)"
     >
-      <img
+      <NuxtImg
         :src="loc.flag"
         :alt="loc.name"
         class="h-3.5 w-5 object-cover rounded-[2px] block"
