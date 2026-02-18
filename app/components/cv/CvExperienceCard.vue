@@ -39,13 +39,17 @@
         </ul>
         <div v-if="selectedProjects?.length" class="mt-3">
           <p
-            class="text-xs font-medium text-base-content/60 uppercase tracking-wide mb-1"
+            class="text-xs font-medium text-base-content/60 uppercase tracking-wide mb-2"
           >
             {{ selectedProjectsLabel }}
           </p>
-          <p class="text-sm text-base-content/80">
-            {{ (selectedProjects || []).join(", ") }}
-          </p>
+          <div class="flex flex-wrap gap-2">
+            <CvProjectCard
+              v-for="(project, i) in selectedProjects"
+              :key="i"
+              :url="project"
+            />
+          </div>
         </div>
       </div>
     </div>
