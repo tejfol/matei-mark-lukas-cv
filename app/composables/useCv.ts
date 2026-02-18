@@ -169,54 +169,57 @@ const cvHu: CvData = {
   ...cvEn,
   title: 'Szenior Frontend fejlesztő',
   location: 'Ungvár, Ukrajna',
-  summary: 'Szenior frontend fejlesztő 5+ év tapasztalattal, skálázható, teljesítményközpontú webfelületek építésében. Erős a frontend architektúrában, a renderelési stratégiákban (SSG, SSR, ISR), a headless CMS-ben és a CI/CD-ben—a designtól a deployig.',
+  summary: 'Szenior frontend fejlesztő több mint 5 év tapasztalattal, skálázható és teljesítményközpontú webes rendszerek tervezésében és megvalósításában. Magabiztos a frontend architektúrában, a különböző renderelési stratégiák (SSG, SSR, ISR) alkalmazásában, headless CMS integrációkban és CI/CD folyamatokban – a tervezéstől az éles üzembe helyezésig.',
+
   competencies: [
-    'Frontend architektúra és skálázható rendszerek',
-    'Teljesítményoptimalizálás és Core Web Vitals',
-    'Renderelési stratégiák (SSG, SSR, ISR stb.) — mikor melyik, kompromisszumok, implementáció (pl. Nuxt, Vue)',
-    'Akadálymentesítés (WCAG, szematikus HTML, billentyűzet és képernyőolvasó)',
+    'Frontend architektúra és rendszertervezés',
+    'Teljesítményoptimalizálás, Core Web Vitals',
+    'Renderelési stratégiák (SSG, SSR, ISR) – megfelelő technológia kiválasztása és implementálása (Nuxt, Vue)',
+    'Akadálymentesítés (WCAG, szemantikus HTML, billentyűzet-navigáció, képernyőolvasó támogatás)',
     'Headless CMS és API integrációk',
-    'Analitika és adatvezérelt fejlesztések',
-    'CI/CD és deployment',
-    'Manuális és smoke tesztelés; minőségellenőrzések a koncepciótól a productionig',
-    'Többfunkciós együttműködés'
+    'Analitikai rendszerek és adatvezérelt optimalizálás',
+    'CI/CD és deployment folyamatok kialakítása',
+    'Minőségbiztosítás, manuális és smoke tesztelés',
+    'Csapatokon átívelő együttműködés'
   ],
+
   experience: [
     {
       role: 'Szenior Frontend fejlesztő',
       company: 'Xicay Inc.',
-      companySubline: 'Ügynökség',
+      companySubline: 'Digitális ügynökség',
       companyLogo: XICAY_LOGO,
-      period: '2024. szept. – Jelenleg',
+      period: '2024. szeptember – jelenleg',
       bullets: [
-        'A rá bízott projekteken egyedül dolgozott frontend fejlesztőként; az architektúráért, implementációért és az éles webfelületek (kb. 20–50e havi felhasználó) deployjáért felelős.',
-        'Skálázható Nuxt-alapú SSR architektúrát tervezett és épített Storyblok CMS-sel integrálva.',
-        'Statikus SSG-t teljes SSR-re migrált az élő tartalomszerkesztés és jobb renderelési stratégia érdekében.',
-        'Lighthouse pontszámokat javított renderelési optimalizálással, asset stratégiával és struktúra refaktorálással.',
-        'CMS tartalommodellezést és szerkesztési munkafolyamatokat nulláról élesre definiált.',
-        'Teljes analitikai stacket (GA4, GTM) implementált egyéni eseményekkel és követési architektúrával.',
-        'Google Search Consolet konfigurált és a technikai SEO alapjait erősítette.',
-        'CI/CD pipeline-okat és deployment munkafolyamatokat épített stabil, ismételhető release-ekhez.'
+        'A projekteken egyedüli frontend fejlesztőként felelős az architektúráért, a megvalósításért és az éles rendszerek üzembe helyezéséért (kb. 20–50 ezer havi felhasználó).',
+        'Skálázható, Nuxt-alapú SSR architektúra tervezése és implementálása Storyblok CMS integrációval.',
+        'Statikus (SSG) rendszer migrálása teljes SSR megoldásra az élő szerkeszthetőség és a jobb renderelési stratégia érdekében.',
+        'Lighthouse pontszámok javítása renderelési optimalizációval és strukturális refaktorálással.',
+        'CMS tartalomstruktúra és szerkesztési folyamatok kialakítása nulláról production környezetig.',
+        'Teljes analitikai infrastruktúra (GA4, GTM) bevezetése egyedi eseménykövetéssel.',
+        'Google Search Console konfigurálása és technikai SEO fejlesztések.',
+        'CI/CD pipeline-ok és stabil deployment folyamatok kialakítása.'
       ],
       selectedProjects: ['terminal-industries.com', 'prosoundeffects.com']
     },
     {
       role: 'Frontend fejlesztő',
       company: 'ThinkMobiles',
-      companySubline: 'Ügynökség',
+      companySubline: 'Digitális ügynökség',
       companyLogo: TM_LOGO,
-      period: '2021. máj. – 2025. aug.',
+      period: '2021. május – 2025. augusztus',
       bullets: [
-        'Nagy léptékű, API-alapú webfelületeken dolgozott többcsapatos környezetben.',
-        'Frontend rendszereket fejlesztett headless CMS-sel, backend API-kkal és marketing infrastruktúrával integrálva.',
-        'Részt vett a frontend architektúráról szóló megbeszéléseken és csapatok közötti technikai döntésekben.',
-        'Hozzájárult komplex ökoszisztéma platformokhoz: főoldalak, landoló oldalak, CMS-alapú termékek.',
-        'Belső eszközöket szállított: marketing automatizáció és tartalomvezérelt platformok.',
-        'Önállóan dolgozott frontend/backend párokban kisebb-nagyobb ügyfélprojekteken.',
-        'Junior fejlesztői és designer interjúkat vitt.'
+        'Nagy léptékű, API-alapú webes rendszerek fejlesztése többcsapatos környezetben.',
+        'Frontend alkalmazások fejlesztése headless CMS és backend API integrációval.',
+        'Részvétel frontend architekturális döntésekben és csapatok közötti technikai egyeztetésekben.',
+        'Komplex webes ökoszisztémák fejlesztése (főoldalak, landing oldalak, CMS-alapú rendszerek).',
+        'Belső eszközök fejlesztése marketing automatizáció és tartalomkezelés területén.',
+        'Frontend–backend együttműködés kisebb és közepes ügyfélprojektekben.',
+        'Junior fejlesztők és designerek interjúztatása.'
       ]
     }
   ],
+
   technicalStack: [
     { label: 'Frontend', items: [...(cvEn.technicalStack[0]?.items ?? [])] },
     { label: 'Backend és rendszerek', items: [...(cvEn.technicalStack[1]?.items ?? [])] },
@@ -224,26 +227,31 @@ const cvHu: CvData = {
     { label: 'Analitika és optimalizálás', items: [...(cvEn.technicalStack[3]?.items ?? [])] },
     { label: 'Eszközök', items: [...(cvEn.technicalStack[4]?.items ?? [])] }
   ],
+
   education: [
     { degree: 'Szoftvertechnikai BSc', institution: 'Ungvári Nemzeti Egyetem', year: '2022' },
-    { degree: 'Junior szakember oklevél szoftverfejlesztésből', institution: 'Ungvári Nemzeti Egyetem', year: '2019' }
+    { degree: 'Junior szakember (szoftverfejlesztés)', institution: 'Ungvári Nemzeti Egyetem', year: '2019' }
   ],
+
   languages: [
     { name: 'Magyar', level: 'Anyanyelv' },
-    { name: 'Ukrán', level: 'Haladó' },
-    { name: 'Angol', level: 'Haladó' }
+    { name: 'Ukrán', level: 'Felsőfok' },
+    { name: 'Angol', level: 'Felsőfokú szakmai munkavégzés' }
   ],
+
   sections: {
-    summary: 'Összefoglaló',
-    competencies: 'Kompetenciák',
+    summary: 'Szakmai összefoglaló',
+    competencies: 'Fő kompetenciák',
     experience: 'Szakmai tapasztalat',
-    technicalStack: 'Technikai stack',
+    technicalStack: 'Technológiai stack',
     education: 'Tanulmányok',
-    languages: 'Nyelvek',
+    languages: 'Nyelvismeret',
     selectedProjects: 'Kiemelt projektek'
   },
-  skipToContent: 'Ugrás a tartalomra'
+
+  skipToContent: 'Ugrás a tartalomhoz'
 }
+
 
 const cvUk: CvData = {
   ...cvEn,
