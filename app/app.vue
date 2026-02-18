@@ -61,6 +61,7 @@
 
 <script setup lang="ts">
 const cv = useCv()
+const { locale: cvLocale } = useCvLocale()
 const { activeId, scrollProgress } = useScrollSpy()
 
 const tocItems = computed(() => [
@@ -73,6 +74,7 @@ const tocItems = computed(() => [
 ])
 
 useHead({
+  htmlAttrs: computed(() => ({ lang: cvLocale.value })),
   title: computed(() => `${cv.value.name} · ${cv.value.title}`),
   meta: [
     { name: 'description', content: computed(() => cv.value.summary.slice(0, 160) + (cv.value.summary.length > 160 ? '…' : '')) },
@@ -103,7 +105,8 @@ useHead({
   border-radius: 0.25rem;
   transition: top 0.15s ease;
 }
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
   top: 0.5rem;
   outline: 2px solid currentColor;
   outline-offset: 2px;
@@ -113,6 +116,15 @@ useHead({
 <style>
 html {
   scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+/* Keyboard focus visible for interactive elements */
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 /* Slightly warmer, intentional base and primary */
 [data-theme="light"] {

@@ -3,6 +3,7 @@
     <div class="inline-flex items-center justify-center gap-3 mb-2">
       <h1 class="text-3xl font-bold text-base-content inline-block font-mono">
         {{ name.slice(0, visibleCount) }}<span
+          v-show="!reducedMotion"
           class="cursor"
           aria-hidden
         >|</span>
@@ -60,9 +61,15 @@ const props = defineProps<{
 }>();
 
 const visibleCount = ref(0);
+const reducedMotion = ref(false);
 
 onMounted(() => {
   const len = props.name.length;
+  if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    reducedMotion.value = true;
+    visibleCount.value = len;
+    return;
+  }
   const obj = { count: 0 };
   gsap.to(obj, {
     count: len,
