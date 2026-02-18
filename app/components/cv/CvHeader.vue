@@ -1,8 +1,11 @@
 <template>
   <header class="text-center mb-10">
     <div class="inline-flex items-center justify-center gap-3 mb-2">
-      <h1 class="text-3xl font-bold text-base-content">
-        {{ name }}
+      <h1 class="text-3xl font-bold text-base-content inline-block font-mono">
+        {{ name.slice(0, visibleCount) }}<span
+          class="cursor"
+          aria-hidden
+        >|</span>
       </h1>
     </div>
     <p class="text-lg font-medium text-primary">
@@ -46,11 +49,38 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+import gsap from 'gsap';
+
+const props = defineProps<{
   name: string;
   title: string;
   location: string;
   email: string;
   linkedIn: string;
 }>();
+
+const visibleCount = ref(0);
+
+onMounted(() => {
+  const len = props.name.length;
+  const obj = { count: 0 };
+  gsap.to(obj, {
+    count: len,
+    duration: len * 0.08,
+    ease: 'none',
+    onUpdate: () => {
+      visibleCount.value = Math.round(obj.count);
+    },
+  });
+});
 </script>
+
+<style scoped>
+.cursor {
+  opacity: 1;
+  animation: blink 1.1s step-end infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+</style>

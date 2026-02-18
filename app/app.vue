@@ -5,7 +5,7 @@
       {{ cv.skipToContent }}
     </a>
 
-    <main id="main-content" class="container mx-auto px-4 py-8 max-w-2xl" role="main">
+    <main id="main-content" class="container mx-auto px-4 py-12 md:py-16 max-w-2xl" role="main">
       <div class="bg-base-100 rounded-2xl shadow-lg shadow-base-content/5 p-8 md:p-10">
       <CvHeader
         :name="cv.name"
@@ -15,17 +15,17 @@
         :linked-in="cv.linkedIn"
       />
 
-      <CvSection :title="cv.sections.summary" icon="lucide:file-text">
+      <CvSection section-id="summary" :title="cv.sections.summary" icon="lucide:file-text">
         <p class="text-base-content/80 text-sm leading-relaxed">
           {{ cv.summary }}
         </p>
       </CvSection>
 
-      <CvSection :title="cv.sections.competencies" icon="lucide:list-checks">
+      <CvSection section-id="competencies" :title="cv.sections.competencies" icon="lucide:list-checks">
         <CvCompetencyList :items="cv.competencies" />
       </CvSection>
 
-      <CvSection :title="cv.sections.experience" icon="lucide:briefcase">
+      <CvSection section-id="experience" :title="cv.sections.experience" icon="lucide:briefcase">
         <div class="space-y-8">
           <CvExperienceCard
             v-for="(job, i) in cv.experience"
@@ -42,24 +42,35 @@
         </div>
       </CvSection>
 
-      <CvSection :title="cv.sections.technicalStack" icon="lucide:code">
+      <CvSection section-id="technical-stack" :title="cv.sections.technicalStack" icon="lucide:code">
         <CvTechnicalStack :groups="cv.technicalStack" />
       </CvSection>
 
-      <CvSection :title="cv.sections.education" icon="lucide:graduation-cap">
+      <CvSection section-id="education" :title="cv.sections.education" icon="lucide:graduation-cap">
         <CvEducation :entries="cv.education" />
       </CvSection>
 
-      <CvSection :title="cv.sections.languages" icon="lucide:languages">
+      <CvSection section-id="languages" :title="cv.sections.languages" icon="lucide:languages">
         <CvLanguages :languages="cv.languages" />
       </CvSection>
       </div>
     </main>
+    <CvToc :items="tocItems" :active-id="activeId" :progress="scrollProgress" />
   </div>
 </template>
 
 <script setup lang="ts">
 const cv = useCv()
+const { activeId, scrollProgress } = useScrollSpy()
+
+const tocItems = computed(() => [
+  { id: 'summary', label: cv.value.sections.summary },
+  { id: 'competencies', label: cv.value.sections.competencies },
+  { id: 'experience', label: cv.value.sections.experience },
+  { id: 'technical-stack', label: cv.value.sections.technicalStack },
+  { id: 'education', label: cv.value.sections.education },
+  { id: 'languages', label: cv.value.sections.languages },
+])
 
 useHead({
   title: computed(() => `${cv.value.name} · ${cv.value.title}`),
@@ -100,6 +111,9 @@ useHead({
 </style>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 /* Slightly warmer, intentional base and primary */
 [data-theme="light"] {
   --color-base-200: #f4f4f5;

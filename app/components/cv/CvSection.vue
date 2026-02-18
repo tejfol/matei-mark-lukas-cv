@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-8">
+  <section :id="sectionId" class="mb-8 scroll-mt-24">
     <h2 class="text-xl font-bold border-b-2 border-primary/20 pb-2 mb-4 flex items-center gap-2">
       <Icon
         :name="icon"
@@ -16,5 +16,6 @@
 defineProps<{
   title: string
   icon: string
+  sectionId?: string
 }>()
 </script>
