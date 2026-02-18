@@ -55,6 +55,18 @@
       </CvSection>
       </div>
     </main>
+    <footer class="container mx-auto px-4 max-w-2xl py-6 text-center no-print">
+      <a
+        href="https://github.com/tejfol/matei-mark-lukas-cv"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-sm text-base-content/60 hover:text-primary transition-colors"
+        aria-label="View CV source code on GitHub"
+      >
+        <Icon name="simple-icons:github" class="w-5 h-5 shrink-0" aria-hidden />
+        <span>Source code</span>
+      </a>
+    </footer>
     <CvToc :items="tocItems" :active-id="activeId" :progress="scrollProgress" />
   </div>
 </template>
