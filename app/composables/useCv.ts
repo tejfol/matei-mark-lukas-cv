@@ -19,6 +19,7 @@ const cvEn: CvData = {
     'Analytics & Data-Driven Improvements',
     'CI/CD & Deployment Ownership',
     'Manual & smoke testing; quality checks from concept to production',
+    'Animation & motion (GSAP, CSS) for polished UX',
     'Cross-functional Collaboration'
   ],
   experience: [
@@ -58,7 +59,7 @@ const cvEn: CvData = {
     }
   ],
   technicalStack: [
-    { label: 'Frontend', items: ['Vue', 'Nuxt', 'React', 'Next.js', 'Astro', 'JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'Sass', 'Tailwind'] },
+    { label: 'Frontend', items: ['Vue', 'Nuxt', 'React', 'Next.js', 'Astro', 'JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'Sass', 'Tailwind', 'GSAP', 'CSS animations'] },
     { label: 'Backend & Systems', items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Redis'] },
     { label: 'Infrastructure & DevOps', items: ['Docker', 'Cloudflare', 'GitHub Actions', 'GitLab CI', 'Vercel', 'Linux', 'Bash'] },
     { label: 'Analytics & Optimization', items: ['Google Analytics 4', 'Google Tag Manager', 'Google Search Console'] },
@@ -99,6 +100,7 @@ const cvSv: CvData = {
     'Analys och datadrivna förbättringar',
     'CI/CD och deployment',
     'Manuell och smoke-testning; kvalitetskontroller från koncept till produktion',
+    'Animation och rörelse (GSAP, CSS) för polerad UX',
     'Tvärfunktionellt samarbete'
   ],
   experience: [
@@ -180,6 +182,7 @@ const cvHu: CvData = {
     'Analitikai rendszerek és adatvezérelt optimalizálás',
     'CI/CD és deployment folyamatok kialakítása',
     'Minőségbiztosítás, manuális és smoke tesztelés',
+    'Animáció és mozgás (GSAP, CSS) a kifinomult UX érdekében',
     'Csapatokon átívelő együttműködés'
   ],
 
@@ -267,6 +270,7 @@ const cvUk: CvData = {
     'Аналітика та покращення на основі даних',
     'CI/CD та відповідальність за деплой',
     'Ручне та smoke-тестування; перевірки якості від концепції до продакшну',
+    'Анімація та рух (GSAP, CSS) для полірованої UX',
     'Міжфункціональна співпраця'
   ],
   experience: [
