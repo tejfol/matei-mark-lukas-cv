@@ -9,14 +9,16 @@ const cvEn: CvData = {
   location: 'Uzhhorod, Ukraine',
   email: 'mateimarklukas@gmail.com',
   linkedIn: 'https://www.linkedin.com/in/%E2%98%BB%E2%98%BB%E2%98%BB/',
-  summary: 'Senior Frontend Engineer with 5+ years of experience designing and building scalable, performance-focused web platforms. Experienced in frontend architecture, SSR strategies, and CMS-driven ecosystems, with a strong focus on user experience and measurable impact. Actively leveraging AI-assisted development workflows to improve delivery speed and code quality. Motivated to grow toward frontend architecture within a product-driven environment.',
+  summary: 'Senior Frontend Engineer with 5+ years building scalable, performance-focused web platforms. Strong in frontend architecture, rendering strategies (SSG, SSR, ISR), headless CMS, and CI/CD—from design to deploy.',
   competencies: [
     'Frontend Architecture & Scalable Systems',
     'Performance Optimization & Core Web Vitals',
-    'SSR / Rendering Strategy (Nuxt, Vue)',
+    'Rendering strategies (SSG, SSR, ISR, etc.) — when to use them, trade-offs, and implementation (e.g. Nuxt, Vue)',
+    'Accessibility (WCAG, semantic HTML, keyboard & screen reader support)',
     'Headless CMS & API Integrations',
     'Analytics & Data-Driven Improvements',
     'CI/CD & Deployment Ownership',
+    'Manual & smoke testing; quality checks from concept to production',
     'Cross-functional Collaboration'
   ],
   experience: [
@@ -27,7 +29,7 @@ const cvEn: CvData = {
       companyLogo: XICAY_LOGO,
       period: 'Sep 2024 – Present',
       bullets: [
-        'Sole frontend engineer responsible for architecture, implementation, and deployment of production-grade web platforms (~20–50k monthly users).',
+        'Worked alone as frontend engineer on assigned projects; responsible for architecture, implementation, and deployment of production-grade web platforms (~20–50k monthly users).',
         'Designed and built scalable Nuxt-based SSR architecture integrated with Storyblok CMS.',
         'Migrated static SSG implementation to full SSR setup enabling live content editing and improved rendering strategy.',
         'Improved Lighthouse performance scores through rendering optimization, asset strategy, and structural refactoring.',
@@ -78,7 +80,7 @@ const cvEn: CvData = {
     technicalStack: 'Technical Stack',
     education: 'Education',
     languages: 'Languages',
-    selectedProjects: 'Selected projects'
+    selectedProjects: 'Selected Projects'
   },
   skipToContent: 'Skip to main content'
 }
@@ -87,14 +89,16 @@ const cvSv: CvData = {
   ...cvEn,
   title: 'Senior Frontend-utvecklare',
   location: 'Uzjhorod, Ukraina',
-  summary: 'Senior Frontend-utvecklare med 5+ års erfarenhet av att utforma och bygga skalbara, prestandainriktade webbplattformar. Erfaren av frontend-arkitektur, SSR-strategier och CMS-drivna ekosystem, med starkt fokus på användarupplevelse och mätbar effekt. Använder aktivt AI-stödda utvecklingsarbetsflöden för att öka leveranshastighet och kodkvalitet. Motiverad att växa mot frontend-arkitektur i en produktdriven miljö.',
+  summary: 'Senior Frontend-utvecklare med 5+ års erfarenhet av att bygga skalbara, prestandainriktade webbplattformar. Stark på frontend-arkitektur, renderingsstrategier (SSG, SSR, ISR), headless CMS och CI/CD—från design till deploy.',
   competencies: [
     'Frontend-arkitektur och skalbara system',
     'Prestandaoptimering och Core Web Vitals',
-    'SSR / renderingsstrategi (Nuxt, Vue)',
+    'Renderingsstrategier (SSG, SSR, ISR m.fl.) — när de används, avvägningar och implementation (t.ex. Nuxt, Vue)',
+    'Tillgänglighet (WCAG, semantisk HTML, tangentbord och skärmläsare)',
     'Headless CMS och API-integrationer',
     'Analys och datadrivna förbättringar',
     'CI/CD och deployment',
+    'Manuell och smoke-testning; kvalitetskontroller från koncept till produktion',
     'Tvärfunktionellt samarbete'
   ],
   experience: [
@@ -105,7 +109,7 @@ const cvSv: CvData = {
       companyLogo: XICAY_LOGO,
       period: 'Sep 2024 – Nu',
       bullets: [
-        'Enda frontend-utvecklare ansvarig för arkitektur, implementation och deployment av produktionsklara webbplattformar (~20–50k användare/månad).',
+        'Arbetade ensam som frontend-utvecklare på tilldelade projekt; ansvarig för arkitektur, implementation och deployment av produktionsklara webbplattformar (~20–50k användare/månad).',
         'Utformade och byggde skalbara Nuxt-baserade SSR-arkitekturer integrerade med Storyblok CMS.',
         'Migrerade statisk SSG till full SSR för live-redigering av innehåll och förbättrad renderingsstrategi.',
         'Förbättrade Lighthouse-prestanda genom renderingsoptimering, asset-strategi och strukturell refaktorisering.',
@@ -123,7 +127,7 @@ const cvSv: CvData = {
       companyLogo: TM_LOGO,
       period: 'Maj 2021 – Aug 2025',
       bullets: [
-        'Bidrog till storskaliga API-drivna webbplattformar i en miljö med många team (20+ ingenjörer).',
+        'Bidrog till storskaliga API-drivna webbplattformar i en miljö med många team.',
         'Utvecklade frontend-system integrerade med headless CMS, backend-API:er och marknadsföringsinfrastruktur.',
         'Deltog i diskussioner om frontend-arkitektur och tvär-team tekniska beslut.',
         'Bidrog till komplexa ekosystemplattformar inkl. huvudsajter, landningssidor och CMS-drivna produkter.',
@@ -161,19 +165,190 @@ const cvSv: CvData = {
   skipToContent: 'Hoppa till huvudinnehållet'
 }
 
+const cvHu: CvData = {
+  ...cvEn,
+  title: 'Szenior Frontend fejlesztő',
+  location: 'Ungvár, Ukrajna',
+  summary: 'Szenior frontend fejlesztő 5+ év tapasztalattal, skálázható, teljesítményközpontú webfelületek építésében. Erős a frontend architektúrában, a renderelési stratégiákban (SSG, SSR, ISR), a headless CMS-ben és a CI/CD-ben—a designtól a deployig.',
+  competencies: [
+    'Frontend architektúra és skálázható rendszerek',
+    'Teljesítményoptimalizálás és Core Web Vitals',
+    'Renderelési stratégiák (SSG, SSR, ISR stb.) — mikor melyik, kompromisszumok, implementáció (pl. Nuxt, Vue)',
+    'Akadálymentesítés (WCAG, szematikus HTML, billentyűzet és képernyőolvasó)',
+    'Headless CMS és API integrációk',
+    'Analitika és adatvezérelt fejlesztések',
+    'CI/CD és deployment',
+    'Manuális és smoke tesztelés; minőségellenőrzések a koncepciótól a productionig',
+    'Többfunkciós együttműködés'
+  ],
+  experience: [
+    {
+      role: 'Szenior Frontend fejlesztő',
+      company: 'Xicay Inc.',
+      companySubline: 'Ügynökség',
+      companyLogo: XICAY_LOGO,
+      period: '2024. szept. – Jelenleg',
+      bullets: [
+        'A rá bízott projekteken egyedül dolgozott frontend fejlesztőként; az architektúráért, implementációért és az éles webfelületek (kb. 20–50e havi felhasználó) deployjáért felelős.',
+        'Skálázható Nuxt-alapú SSR architektúrát tervezett és épített Storyblok CMS-sel integrálva.',
+        'Statikus SSG-t teljes SSR-re migrált az élő tartalomszerkesztés és jobb renderelési stratégia érdekében.',
+        'Lighthouse pontszámokat javított renderelési optimalizálással, asset stratégiával és struktúra refaktorálással.',
+        'CMS tartalommodellezést és szerkesztési munkafolyamatokat nulláról élesre definiált.',
+        'Teljes analitikai stacket (GA4, GTM) implementált egyéni eseményekkel és követési architektúrával.',
+        'Google Search Consolet konfigurált és a technikai SEO alapjait erősítette.',
+        'CI/CD pipeline-okat és deployment munkafolyamatokat épített stabil, ismételhető release-ekhez.'
+      ],
+      selectedProjects: ['terminal-industries.com', 'prosoundeffects.com']
+    },
+    {
+      role: 'Frontend fejlesztő',
+      company: 'ThinkMobiles',
+      companySubline: 'Ügynökség',
+      companyLogo: TM_LOGO,
+      period: '2021. máj. – 2025. aug.',
+      bullets: [
+        'Nagy léptékű, API-alapú webfelületeken dolgozott többcsapatos környezetben.',
+        'Frontend rendszereket fejlesztett headless CMS-sel, backend API-kkal és marketing infrastruktúrával integrálva.',
+        'Részt vett a frontend architektúráról szóló megbeszéléseken és csapatok közötti technikai döntésekben.',
+        'Hozzájárult komplex ökoszisztéma platformokhoz: főoldalak, landoló oldalak, CMS-alapú termékek.',
+        'Belső eszközöket szállított: marketing automatizáció és tartalomvezérelt platformok.',
+        'Önállóan dolgozott frontend/backend párokban kisebb-nagyobb ügyfélprojekteken.',
+        'Junior fejlesztői és designer interjúkat vitt.'
+      ]
+    }
+  ],
+  technicalStack: [
+    { label: 'Frontend', items: [...(cvEn.technicalStack[0]?.items ?? [])] },
+    { label: 'Backend és rendszerek', items: [...(cvEn.technicalStack[1]?.items ?? [])] },
+    { label: 'Infrastruktúra és DevOps', items: [...(cvEn.technicalStack[2]?.items ?? [])] },
+    { label: 'Analitika és optimalizálás', items: [...(cvEn.technicalStack[3]?.items ?? [])] },
+    { label: 'Eszközök', items: [...(cvEn.technicalStack[4]?.items ?? [])] }
+  ],
+  education: [
+    { degree: 'Szoftvertechnikai BSc', institution: 'Ungvári Nemzeti Egyetem', year: '2022' },
+    { degree: 'Junior szakember oklevél szoftverfejlesztésből', institution: 'Ungvári Nemzeti Egyetem', year: '2019' }
+  ],
+  languages: [
+    { name: 'Magyar', level: 'Anyanyelv' },
+    { name: 'Ukrán', level: 'Haladó' },
+    { name: 'Angol', level: 'Haladó' }
+  ],
+  sections: {
+    summary: 'Összefoglaló',
+    competencies: 'Kompetenciák',
+    experience: 'Szakmai tapasztalat',
+    technicalStack: 'Technikai stack',
+    education: 'Tanulmányok',
+    languages: 'Nyelvek',
+    selectedProjects: 'Kiemelt projektek'
+  },
+  skipToContent: 'Ugrás a tartalomra'
+}
+
+const cvUk: CvData = {
+  ...cvEn,
+  title: 'Senior Frontend-інженер',
+  location: 'Ужгород, Україна',
+  summary: 'Senior Frontend-інженер з понад 5 роками досвіду побудови масштабованих веб-платформ з фокусом на продуктивність. Сильні сторони: фронтенд-архітектура, стратегії рендерингу (SSG, SSR, ISR), headless CMS та CI/CD—від дизайну до деплою.',
+  competencies: [
+    'Фронтенд-архітектура та масштабовані системи',
+    'Оптимізація продуктивності та Core Web Vitals',
+    'Стратегії рендерингу (SSG, SSR, ISR тощо) — коли яку використовувати, компроміси та реалізація (напр. Nuxt, Vue)',
+    'Доступність (WCAG, семантична HTML, клавіатура та скрінридер)',
+    'Headless CMS та API-інтеграції',
+    'Аналітика та покращення на основі даних',
+    'CI/CD та відповідальність за деплой',
+    'Ручне та smoke-тестування; перевірки якості від концепції до продакшну',
+    'Міжфункціональна співпраця'
+  ],
+  experience: [
+    {
+      role: 'Senior Frontend-інженер',
+      company: 'Xicay Inc.',
+      companySubline: 'Агенція',
+      companyLogo: XICAY_LOGO,
+      period: 'Вер 2024 – дотепер',
+      bullets: [
+        'Працював єдиним фронтенд-інженером на призначених проєктах; відповідальний за архітектуру, реалізацію та деплой продакшн-платформ (~20–50 тис. користувачів на місяць).',
+        'Спроєктував і побудував масштабовану Nuxt-based SSR архітектуру з інтеграцією Storyblok CMS.',
+        'Мігрував статичний SSG на повний SSR для живого редагування контенту та покращеної стратегії рендерингу.',
+        'Підвищив показники Lighthouse за рахунок оптимізації рендерингу, стратегії ассетів та структурного рефакторингу.',
+        'Визначив моделювання контенту в CMS та редакційні процеси з нуля до продакшну.',
+        'Впровадив повний аналітичний стек (GA4, GTM), включно з кастомними подіями та архітектурою трекінгу.',
+        'Налаштував Google Search Console та покращив технічну SEO-базу.',
+        'Налаштував CI/CD пайплайни та процеси деплою для стабільних і повторюваних релізів.'
+      ],
+      selectedProjects: ['terminal-industries.com', 'prosoundeffects.com']
+    },
+    {
+      role: 'Frontend-розробник',
+      company: 'ThinkMobiles',
+      companySubline: 'Агенція',
+      companyLogo: TM_LOGO,
+      period: 'Трав 2021 – Сер 2025',
+      bullets: [
+        'Брав участь у великих API-орієнтованих веб-платформах у багатокомандному середовищі.',
+        'Розробляв фронтенд-системи, інтегровані з headless CMS, бекенд-API та маркетинговою інфраструктурою.',
+        'Брав участь у обговореннях фронтенд-архітектури та міжкомандних технічних рішеннях.',
+        'Працював над складними екосистемними платформами: головні сайти, лендинги, CMS-продукти.',
+        'Реалізовував внутрішні інструменти: маркетингова автоматизація та контент-орієнтовані платформи.',
+        'Працював самостійно у парах фронтенд/бекенд над малими та середніми клієнтськими проєктами.',
+        'Проводив співбесіди на позиції junior-розробника та дизайнера.'
+      ]
+    }
+  ],
+  technicalStack: [
+    { label: 'Фронтенд', items: [...(cvEn.technicalStack[0]?.items ?? [])] },
+    { label: 'Бекенд та системи', items: [...(cvEn.technicalStack[1]?.items ?? [])] },
+    { label: 'Інфраструктура та DevOps', items: [...(cvEn.technicalStack[2]?.items ?? [])] },
+    { label: 'Аналітика та оптимізація', items: [...(cvEn.technicalStack[3]?.items ?? [])] },
+    { label: 'Інструменти', items: [...(cvEn.technicalStack[4]?.items ?? [])] }
+  ],
+  education: [
+    { degree: 'Бакалавр з програмної інженерії', institution: 'Ужгородський національний університет', year: '2022' },
+    { degree: 'Диплом молодшого спеціаліста з розробки ПЗ', institution: 'Ужгородський національний університет', year: '2019' }
+  ],
+  languages: [
+    { name: 'Угорська', level: 'Рідна' },
+    { name: 'Українська', level: 'Просунутий' },
+    { name: 'Англійська', level: 'Просунутий' }
+  ],
+  sections: {
+    summary: 'Резюме',
+    competencies: 'Компетенції',
+    experience: 'Досвід роботи',
+    technicalStack: 'Технічний стек',
+    education: 'Освіта',
+    languages: 'Мови',
+    selectedProjects: 'Обрані проєкти'
+  },
+  skipToContent: 'Перейти до контенту'
+}
+
+export type CvLocaleCode = 'en' | 'sv' | 'hu' | 'uk'
+
 export function useCvLocale() {
-  const cvLocale = useState<'en' | 'sv'>('cv-locale', () => 'en')
+  const cvLocale = useState<CvLocaleCode>('cv-locale', () => 'en')
   return {
     locale: cvLocale,
-    setLocale: (code: 'en' | 'sv') => { cvLocale.value = code },
+    setLocale: (code: CvLocaleCode) => { cvLocale.value = code },
     locales: [
       { code: 'en' as const, name: 'English', flag: '/flags/flag-us.svg' },
-      { code: 'sv' as const, name: 'Svenska', flag: '/flags/flag-se.svg' }
+      { code: 'sv' as const, name: 'Svenska', flag: '/flags/flag-se.svg' },
+      { code: 'hu' as const, name: 'Magyar', flag: '/flags/flag-hu.svg' },
+      { code: 'uk' as const, name: 'Українська', flag: '/flags/flag-ua.svg' }
     ]
   }
 }
 
 export function useCv() {
-  const cvLocale = useState<'en' | 'sv'>('cv-locale', () => 'en')
-  return computed<CvData>(() => (cvLocale.value === 'sv' ? cvSv : cvEn))
+  const cvLocale = useState<CvLocaleCode>('cv-locale', () => 'en')
+  return computed<CvData>(() => {
+    switch (cvLocale.value) {
+      case 'sv': return cvSv
+      case 'hu': return cvHu
+      case 'uk': return cvUk
+      default: return cvEn
+    }
+  })
 }
